@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresar número" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ecs-Ok-QkC">
+                                <rect key="frame" x="15" y="43" width="570" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iec-gM-4eq">
+                                <rect key="frame" x="15" y="122" width="570" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formato:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJm-r9-kZn">
+                                <rect key="frame" x="266" y="87" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Iec-gM-4eq" firstAttribute="top" secondItem="ecs-Ok-QkC" secondAttribute="bottom" constant="20" id="8vf-VR-m5w"/>
+                            <constraint firstItem="Iec-gM-4eq" firstAttribute="width" secondItem="ecs-Ok-QkC" secondAttribute="width" id="LXz-kc-uXg"/>
+                            <constraint firstItem="Iec-gM-4eq" firstAttribute="centerX" secondItem="ecs-Ok-QkC" secondAttribute="centerX" id="Lut-0H-VgM"/>
+                            <constraint firstItem="ecs-Ok-QkC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="Pzi-De-r9i"/>
+                            <constraint firstItem="ecs-Ok-QkC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="XAu-bi-DSd"/>
+                            <constraint firstItem="IJm-r9-kZn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dhc-jY-RE9"/>
+                            <constraint firstItem="Iec-gM-4eq" firstAttribute="top" secondItem="IJm-r9-kZn" secondAttribute="bottom" constant="14" id="gCa-RD-EWJ"/>
+                            <constraint firstAttribute="trailing" secondItem="ecs-Ok-QkC" secondAttribute="trailing" constant="15" id="lRN-aK-6yt"/>
+                            <constraint firstItem="IJm-r9-kZn" firstAttribute="top" secondItem="ecs-Ok-QkC" secondAttribute="bottom" constant="14" id="ngu-qe-0gz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8vf-VR-m5w"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="phoneFormattedTextField" destination="Iec-gM-4eq" id="3b7-NH-7e1"/>
+                        <outlet property="phoneNumberTextField" destination="ecs-Ok-QkC" id="w1p-VC-fXc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
